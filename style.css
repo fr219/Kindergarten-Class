@@ -2,18 +2,47 @@ body {
     display: grid;
     place-content: center;
     min-height: 100vh;
-    background-color:#ffffff;
+    background-color: rgb(255, 255, 255);
 }
 
-.container {
-    position: relative;
+main{
+    align-items: center;
+}
+
+header {
+    text-align: center;
+}
+
+nav {
+    background: #f9a5a5;
+    position: fixed; 
+    width: 100%;
+    top: 0;
+    padding: .7rem 0;
+    height: 80px;
+    display: flex;
+    border-bottom: 10px solid lighten(#000000, 30%);
+}
+
+ul {
+    list-style: none;
+    margin: 10;
+    padding: 10;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1em;
+    grid-template-columns: repeat(7, auto);
+    grid-gap: 30px; 
+    list-style:symbols();
 }
 
 .Welcome {
+    text-align: center;
+    display: flex;
     background-image: url("cloud.png");
     image-resolution: 90px;
-    height: 200px;
+    background-size: 100% 100%;
+    height: 100%;
+    max-height: fit-content;
+    width: 100%;
+    max-width: fit-content;
 }
+
