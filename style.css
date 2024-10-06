@@ -1,0 +1,19 @@
+body {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    background-color:#ffffff;
+}
+
+.container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+}
+
+.Welcome {
+    background-image: url("cloud.png");
+    image-resolution: 90px;
+    height: 200px;
+}
