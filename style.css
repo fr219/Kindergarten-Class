@@ -62,3 +62,16 @@ ul {
     width: 100%;
     max-width: fit-content;
 }
+
+.highlight {
+    background-color:bisque;
+}
+.special {
+    background-color:antiquewhite;
+    text-align: center;
+}
+
+td {
+    text-align: center;
+    background-color:blanchedalmond;
+}
