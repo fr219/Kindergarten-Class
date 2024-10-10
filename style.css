@@ -1,7 +1,6 @@
 body {
     display: grid;
     min-height: 100vh;
-    background-color: rgb(255, 255, 255);
 }
 
 main{
@@ -30,6 +29,8 @@ nav > h1 {
 }
 
 a {
+    border-style: outset;
+    border-color: rgba(224, 223, 223, 0.421);
     position: relative;
     left: 470px;
     text-align: center;
@@ -66,14 +67,16 @@ ul {
 .highlight {
     background-color:bisque;
 }
-.special {
-    background-color:antiquewhite;
-    text-align: center;
-}
 
 td {
     text-align: center;
-    background-color:blanchedalmond;
+    background: linear-gradient(bisque, rgb(255, 237, 171));
+    border-style: outset;
+    border-color: rgba(224, 223, 223, 0.421);
+}
+th {
+    border-style: outset;
+    border-color: rgba(224, 223, 223, 0.421);
 }
 
 #week > h1 {
