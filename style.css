@@ -77,6 +77,61 @@ th {
     background-color: rgba(255, 237, 171, 0.5);
 }
 
+.announce {
+    margin: none;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+  .paper {
+    border: 1px solid;
+    border-top-right-radius: 68px 2px;
+    border-top-left-radius: 2px 53px;
+    border-bottom-right-radius: 2px 73px;
+    border-bottom-left-radius: 78px 1.3px;
+    box-shadow: 15px 28px 25px -18px rgba(0,0,0,.2);
+    font-family: 'Comic Sans MS', 'sans-serif';
+  }
+  
+  .sticky-notes {
+    background-color: white;
+    height: 80px;
+    width: 100px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightyellow;
+    transform: rotate(-3deg);
+    position: relative;
+  }
+  
+  .sticky-notes::before,
+  .sticky-notes::after {
+    content: '';
+    background-color: rgb(103, 133, 184);
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid rgb(30, 43, 65);
+  }
+  
+  .sticky-notes::before {
+    width: 20px;
+    height: 20px;
+    top: -10px;
+    left: -10px;
+  }
+  
+  .sticky-notes::after {
+    width: 10px;
+    height: 10px;
+    top: -5px;
+    left: -5px;
+  }
+
 footer {
     text-align: center;
     padding: 20px;
