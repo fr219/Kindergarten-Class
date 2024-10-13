@@ -1,5 +1,8 @@
 body {
-    display: grid;
+    background-image: url("image.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
     min-height: 100vh;
 }
 
@@ -8,9 +11,8 @@ main{
 }
 
 .title {
-    background-image: url("image.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    border-style: inset;
+    border-color: rgba(224, 223, 223, 0.421);
     text-align: center;
 }
 
@@ -23,12 +25,6 @@ nav {
     height: 65px;
     display: flex;
     border-bottom: 10px solid lighten(#000000, 30%);
-}
-nav > h1 {
-    position: relative;
-    left: 30px;
-    bottom: 8px;
-    text-align: left;
 }
 
 a {
@@ -50,10 +46,10 @@ ul {
 
 .Welcome {
     font-size: 20px;
-    padding-top: 20px;
-    padding-bottom: 40px;
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
     position: relative;
     text-align: center;
     display: flex;
@@ -71,11 +67,11 @@ ul {
 td {
     text-align: center;
     background: linear-gradient(bisque, rgb(255, 237, 171));
-    border-style: outset;
+    border-style: inset;
     border-color: rgba(224, 223, 223, 0.421);
 }
 th {
-    border-style: outset;
+    border-style: inset;
     border-color: rgba(224, 223, 223, 0.421);
 }
 
