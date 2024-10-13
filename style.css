@@ -1,146 +1,115 @@
-body {
-    font-family: 'Arial', sans-serif;
-    background-image: url("image.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+/* General Styles */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #FCEDE0; /* Soft peach background for child-friendly tone */
     color: #333;
 }
 
+h1, h2 {
+    color: #4F3CC9; /* Deep purple headers */
+}
+
+p, a {
+    color: #333; /* Easy-to-read color */
+}
+
+/* Header and Navigation */
 .header {
-    background: linear-gradient(#cae0f5, #c5ddd7);
-    text-align: center;
+    background-color: #FFD480; /* Soft yellow */
     padding: 20px;
+    text-align: center;
 }
 
-h1 {
-    font-size: 2.5em;
-    margin: 0;
+.header h1 {
+    font-size: 2.5rem;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
+.header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 15px;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #000;
+.header nav ul li a {
+    padding: 10px 20px;
+    background-color: #FFE0B2; /* Light orange buttons */
+    border-radius: 10px;
     font-weight: bold;
+    transition: background-color 0.3s;
 }
 
-nav a:hover {
-    text-decoration: underline;
+.header nav ul li a:hover {
+    background-color: #F25C05;
+    color: white;
 }
 
+/* Container and Main Sections */
 .container {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
-.welcome {
-    text-align: center;
-    font-size: 1.2em;
+section {
+    margin-bottom: 40px;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.8);
+    background-color: #FFF8F0;
     border-radius: 10px;
 }
 
-h2 {
-    text-align: center;
-    margin-top: 40px;
+.welcome h2, .schedule h2, .gallery h2, .announcements h2, .teacher h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
 }
 
-table {
+/* Weekly Schedule Table */
+.schedule table {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px 0;
+    margin-top: 20px;
 }
 
-th, td {
-    border: 1px solid #ddd;
-    text-align: center;
+.schedule th, .schedule td {
     padding: 15px;
+    text-align: center;
+    border: 2px solid #F25C05; /* Orange for table borders */
 }
 
-th {
-    background-color: bisque;
+.schedule th {
+    background-color: #FDE8CD;
 }
 
-.highlight {
-    background-color: rgba(255, 237, 171, 0.5);
-}
-
-.announce {
-    margin: none;
-    height: 100%;
-    width: 100%;
+/* Gallery */
+.gallery-grid {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
 }
-  
-  .paper {
-    border: 1px solid;
-    border-top-right-radius: 68px 2px;
-    border-top-left-radius: 2px 53px;
-    border-bottom-right-radius: 2px 73px;
-    border-bottom-left-radius: 78px 1.3px;
-    box-shadow: 15px 28px 25px -18px rgba(0,0,0,.2);
-    font-family: 'Comic Sans MS', 'sans-serif';
-  }
-  
-  .sticky-notes {
-    background-color: white;
-    height: 80px;
-    width: 100px;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: lightyellow;
-    transform: rotate(-3deg);
-    position: relative;
-  }
-  
-  .sticky-notes::before,
-  .sticky-notes::after {
-    content: '';
-    background-color: rgb(103, 133, 184);
-    position: absolute;
-    border-radius: 50%;
-    border: 2px solid rgb(30, 43, 65);
-  }
-  
-  .sticky-notes::before {
-    width: 20px;
-    height: 20px;
-    top: -10px;
-    left: -10px;
-  }
-  
-  .sticky-notes::after {
-    width: 10px;
-    height: 10px;
-    top: -5px;
-    left: -5px;
-  }
 
+.gallery-grid img {
+    width: calc(25% - 15px);
+    border-radius: 10px;
+}
+
+/* Announcements */
+.announcement-list p {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #FFEBB7;
+    border-radius: 10px;
+}
+
+/* Footer */
 footer {
+    background-color: #FFD480;
     text-align: center;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.8);
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-footer p {
-    margin: 0;
+    border-top: 3px solid #F25C05;
 }
